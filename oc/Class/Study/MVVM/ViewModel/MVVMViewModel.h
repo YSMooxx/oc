@@ -12,7 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MVVMViewModel : NSObject
 
-//@property(nonatomic,copy)NSString *nameStr;
 @property(nonatomic,strong)MVVMModel *model;
 
 -(void)setWithModel:(MVVMModel * _Nonnull)model;

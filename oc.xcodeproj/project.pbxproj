@@ -15,6 +15,13 @@
 		D587B04B2906670300701C5E /* MVVMViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D587B04A2906670300701C5E /* MVVMViewModel.m */; };
 		D587B04E2906688C00701C5E /* MVVMView.m in Sources */ = {isa = PBXBuildFile; fileRef = D587B04D2906688C00701C5E /* MVVMView.m */; };
 		D587B05129066D9300701C5E /* MVVMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D587B05029066D9300701C5E /* MVVMViewController.m */; };
+		D587B05929068DEC00701C5E /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D587B05829068DEC00701C5E /* GCDViewController.m */; };
+		D587B05E29068E5A00701C5E /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D587B05D29068E5A00701C5E /* BaseViewModel.m */; };
+		D587B06129068E7A00701C5E /* GCDViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D587B06029068E7A00701C5E /* GCDViewModel.m */; };
+		D587B0642906925D00701C5E /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = D587B0632906925D00701C5E /* BaseView.m */; };
+		D587B0672906927500701C5E /* GCDView.m in Sources */ = {isa = PBXBuildFile; fileRef = D587B0662906927500701C5E /* GCDView.m */; };
+		D587B06A2906929B00701C5E /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D587B0692906929B00701C5E /* BaseModel.m */; };
+		D587B06D290692E900701C5E /* GCDModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D587B06C290692E900701C5E /* GCDModel.m */; };
 		D587ED5128FD8AFD00642A33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D587ED5028FD8AFD00642A33 /* AppDelegate.m */; };
 		D587ED5728FD8AFD00642A33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D587ED5628FD8AFD00642A33 /* ViewController.m */; };
 		D587ED5A28FD8AFD00642A33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D587ED5828FD8AFD00642A33 /* Main.storyboard */; };
@@ -63,6 +70,21 @@
 		D587B04D2906688C00701C5E /* MVVMView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMView.m; sourceTree = "<group>"; };
 		D587B04F29066D9300701C5E /* MVVMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMViewController.h; sourceTree = "<group>"; };
 		D587B05029066D9300701C5E /* MVVMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMViewController.m; sourceTree = "<group>"; };
+		D587B05729068DEC00701C5E /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
+		D587B05829068DEC00701C5E /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
+		D587B05C29068E5A00701C5E /* BaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
+		D587B05D29068E5A00701C5E /* BaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
+		D587B05F29068E7A00701C5E /* GCDViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewModel.h; sourceTree = "<group>"; };
+		D587B06029068E7A00701C5E /* GCDViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewModel.m; sourceTree = "<group>"; };
+		D587B0622906925D00701C5E /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		D587B0632906925D00701C5E /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		D587B0652906927500701C5E /* GCDView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDView.h; sourceTree = "<group>"; };
+		D587B0662906927500701C5E /* GCDView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDView.m; sourceTree = "<group>"; };
+		D587B0682906929B00701C5E /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		D587B0692906929B00701C5E /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		D587B06B290692E900701C5E /* GCDModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDModel.h; sourceTree = "<group>"; };
+		D587B06C290692E900701C5E /* GCDModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDModel.m; sourceTree = "<group>"; };
+		D587B06F29069A2B00701C5E /* oc.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = oc.pch; sourceTree = "<group>"; };
 		D587ED4C28FD8AFD00642A33 /* oc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D587ED4F28FD8AFD00642A33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D587ED5028FD8AFD00642A33 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -148,8 +170,10 @@
 			isa = PBXGroup;
 			children = (
 				D587AFF3290638BE00701C5E /* ViewController */,
+				D587B05B29068E4300701C5E /* ViewModel */,
 				D587AFF1290638BE00701C5E /* Model */,
 				D587AFF2290638BE00701C5E /* View */,
+				D587B06E2906990200701C5E /* pch */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -157,6 +181,8 @@
 		D587AFF1290638BE00701C5E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D587B0682906929B00701C5E /* BaseModel.h */,
+				D587B0692906929B00701C5E /* BaseModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,6 +190,8 @@
 		D587AFF2290638BE00701C5E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D587B0622906925D00701C5E /* BaseView.h */,
+				D587B0632906925D00701C5E /* BaseView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -223,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				D587B04129064F6B00701C5E /* MVVM */,
+				D587B05229068DDD00701C5E /* GCD */,
 			);
 			path = Study;
 			sourceTree = "<group>";
@@ -272,6 +301,70 @@
 				D587B05029066D9300701C5E /* MVVMViewController.m */,
 			);
 			path = ViewContrller;
+			sourceTree = "<group>";
+		};
+		D587B05229068DDD00701C5E /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				D587B05629068DDE00701C5E /* ViewController */,
+				D587B05329068DDD00701C5E /* ViewModel */,
+				D587B05429068DDE00701C5E /* Model */,
+				D587B05529068DDE00701C5E /* View */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+		D587B05329068DDD00701C5E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D587B05F29068E7A00701C5E /* GCDViewModel.h */,
+				D587B06029068E7A00701C5E /* GCDViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D587B05429068DDE00701C5E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D587B06B290692E900701C5E /* GCDModel.h */,
+				D587B06C290692E900701C5E /* GCDModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D587B05529068DDE00701C5E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D587B0652906927500701C5E /* GCDView.h */,
+				D587B0662906927500701C5E /* GCDView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D587B05629068DDE00701C5E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D587B05729068DEC00701C5E /* GCDViewController.h */,
+				D587B05829068DEC00701C5E /* GCDViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D587B05B29068E4300701C5E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D587B05C29068E5A00701C5E /* BaseViewModel.h */,
+				D587B05D29068E5A00701C5E /* BaseViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D587B06E2906990200701C5E /* pch */ = {
+			isa = PBXGroup;
+			children = (
+				D587B06F29069A2B00701C5E /* oc.pch */,
+			);
+			path = pch;
 			sourceTree = "<group>";
 		};
 		D587ED4328FD8AFD00642A33 = {
@@ -566,10 +659,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D587B04B2906670300701C5E /* MVVMViewModel.m in Sources */,
+				D587B0672906927500701C5E /* GCDView.m in Sources */,
 				D587ED6528FD8AFF00642A33 /* main.m in Sources */,
+				D587B06A2906929B00701C5E /* BaseModel.m in Sources */,
+				D587B06D290692E900701C5E /* GCDModel.m in Sources */,
+				D587B05E29068E5A00701C5E /* BaseViewModel.m in Sources */,
 				D587AFF6290638EC00701C5E /* BaseViewController.m in Sources */,
+				D587B05929068DEC00701C5E /* GCDViewController.m in Sources */,
 				D587ED5728FD8AFD00642A33 /* ViewController.m in Sources */,
+				D587B0642906925D00701C5E /* BaseView.m in Sources */,
 				D587ED5D28FD8AFD00642A33 /* oc.xcdatamodeld in Sources */,
+				D587B06129068E7A00701C5E /* GCDViewModel.m in Sources */,
 				D587ED5128FD8AFD00642A33 /* AppDelegate.m in Sources */,
 				D587B04E2906688C00701C5E /* MVVMView.m in Sources */,
 				D587B04829064FCB00701C5E /* MVVMModel.m in Sources */,
@@ -748,6 +848,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NL8A4FJ48B;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/oc/Class/Base/pch/oc.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = oc/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -762,6 +864,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = first.line.oc.oc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SHARED_PRECOMPS_DIR = "$(OBJROOT)/SharedPrecompiledHeaders";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -776,6 +879,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NL8A4FJ48B;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/oc/Class/Base/pch/oc.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = oc/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -790,6 +895,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = first.line.oc.oc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SHARED_PRECOMPS_DIR = "$(OBJROOT)/SharedPrecompiledHeaders";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

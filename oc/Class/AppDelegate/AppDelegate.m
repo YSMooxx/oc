@@ -6,7 +6,7 @@
 //
 
 #import "AppDelegate.h"
-#import "MVVMViewController.h"
+#import "GCDViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,7 +22,7 @@
     
     [self.window setBackgroundColor:[UIColor whiteColor]];
     
-    MVVMViewController *vc = [[MVVMViewController alloc] init];
+    GCDViewController *vc = [[GCDViewController alloc] init];
 
     self.window.rootViewController = vc;
     

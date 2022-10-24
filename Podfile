@@ -8,7 +8,7 @@ target 'oc' do
   # Pods for oc
 
       pod 'SDWebImage', '~> 5.13.4'
-
+      pod 'Masonry', '~> 1.1.0'
   target 'ocTests' do
     inherit! :search_paths
     # Pods for testing

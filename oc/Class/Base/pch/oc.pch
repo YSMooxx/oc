@@ -1,0 +1,17 @@
+//
+//  oc.pch
+//  oc
+//
+//  Created by New on 2022/10/24.
+//
+
+#ifndef oc_pch
+#define oc_pch
+
+
+#import "Masonry.h"
+
+#endif
+
+//  弱引用
+#define BJWeakSelf __weak typeof(self) weakSelf = self;
