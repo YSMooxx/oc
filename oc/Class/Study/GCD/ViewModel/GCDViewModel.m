@@ -76,6 +76,8 @@
 }
 
 - (void)changeImages {
+    
+    NSMutableArray * array = [NSMutableArray array];
 
     NSMutableIndexSet *picks = [NSMutableIndexSet indexSet];
     do {
@@ -83,18 +85,13 @@
     } while (picks.count != 3);
     [picks enumerateIndexesUsingBlock:^(NSUInteger idx, BOOL *stop) {
         
-        if (idx==0) {
-            
-            self.model.url1 = self.array[idx];
-        }else if (idx == 1) {
-            
-            self.model.url2 = self.array[idx];
-        }else if (idx == 2) {
-            
-            self.model.url3 = self.array[idx];
-        }
+        [array addObject:self.array[idx]];
         
     }];
+    
+    self.model.url1 = array[0];
+    self.model.url2 = array[1];
+    self.model.url3 = array[2];
     
     [self getData];
 }

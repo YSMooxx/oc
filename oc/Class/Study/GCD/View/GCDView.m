@@ -83,10 +83,10 @@
     
     [self.button mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        make.top.equalTo(weakSelf.imageView3.mas_bottom).offset(50);
+        make.top.equalTo(weakSelf.imageView3.mas_bottom).offset(80);
         make.centerX.equalTo(weakSelf);
-        make.width.mas_equalTo(50);
-        make.height.mas_equalTo(30);
+        make.width.mas_equalTo(100);
+        make.height.mas_equalTo(60);
     }];
 }
 
