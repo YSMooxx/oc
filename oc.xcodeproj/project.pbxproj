@@ -11,6 +11,10 @@
 		4B115E9B68EA13D1E856FE8C /* Pods_oc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5C15B7B108CD6961BF8AA28 /* Pods_oc.framework */; };
 		9E662EFCBFF88D7C4164A43F /* Pods_ocTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 905E7897378176D5848903FF /* Pods_ocTests.framework */; };
 		D587AFF6290638EC00701C5E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D587AFF5290638EC00701C5E /* BaseViewController.m */; };
+		D587B04829064FCB00701C5E /* MVVMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D587B04729064FCB00701C5E /* MVVMModel.m */; };
+		D587B04B2906670300701C5E /* MVVMViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D587B04A2906670300701C5E /* MVVMViewModel.m */; };
+		D587B04E2906688C00701C5E /* MVVMView.m in Sources */ = {isa = PBXBuildFile; fileRef = D587B04D2906688C00701C5E /* MVVMView.m */; };
+		D587B05129066D9300701C5E /* MVVMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D587B05029066D9300701C5E /* MVVMViewController.m */; };
 		D587ED5128FD8AFD00642A33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D587ED5028FD8AFD00642A33 /* AppDelegate.m */; };
 		D587ED5728FD8AFD00642A33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D587ED5628FD8AFD00642A33 /* ViewController.m */; };
 		D587ED5A28FD8AFD00642A33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D587ED5828FD8AFD00642A33 /* Main.storyboard */; };
@@ -51,6 +55,14 @@
 		B2A3F188F4801FDBE9C73172 /* Pods-oc-ocUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oc-ocUITests.release.xcconfig"; path = "Target Support Files/Pods-oc-ocUITests/Pods-oc-ocUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D587AFF4290638EC00701C5E /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		D587AFF5290638EC00701C5E /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		D587B04629064FCB00701C5E /* MVVMModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMModel.h; sourceTree = "<group>"; };
+		D587B04729064FCB00701C5E /* MVVMModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMModel.m; sourceTree = "<group>"; };
+		D587B0492906670300701C5E /* MVVMViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMViewModel.h; sourceTree = "<group>"; };
+		D587B04A2906670300701C5E /* MVVMViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMViewModel.m; sourceTree = "<group>"; };
+		D587B04C2906688C00701C5E /* MVVMView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMView.h; sourceTree = "<group>"; };
+		D587B04D2906688C00701C5E /* MVVMView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMView.m; sourceTree = "<group>"; };
+		D587B04F29066D9300701C5E /* MVVMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMViewController.h; sourceTree = "<group>"; };
+		D587B05029066D9300701C5E /* MVVMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMViewController.m; sourceTree = "<group>"; };
 		D587ED4C28FD8AFD00642A33 /* oc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D587ED4F28FD8AFD00642A33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D587ED5028FD8AFD00642A33 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -126,6 +138,7 @@
 			children = (
 				D587AFF82906395700701C5E /* Message */,
 				D587AFF0290638BE00701C5E /* Base */,
+				D587B04029064F6B00701C5E /* Study */,
 				D587AFF72906391B00701C5E /* AppDelegate */,
 			);
 			path = Class;
@@ -204,6 +217,61 @@
 				D587ED5628FD8AFD00642A33 /* ViewController.m */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D587B04029064F6B00701C5E /* Study */ = {
+			isa = PBXGroup;
+			children = (
+				D587B04129064F6B00701C5E /* MVVM */,
+			);
+			path = Study;
+			sourceTree = "<group>";
+		};
+		D587B04129064F6B00701C5E /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				D587B04229064F6B00701C5E /* ViewModel */,
+				D587B04329064F6B00701C5E /* Model */,
+				D587B04429064F6B00701C5E /* View */,
+				D587B04529064F6B00701C5E /* ViewContrller */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		D587B04229064F6B00701C5E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D587B0492906670300701C5E /* MVVMViewModel.h */,
+				D587B04A2906670300701C5E /* MVVMViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D587B04329064F6B00701C5E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D587B04629064FCB00701C5E /* MVVMModel.h */,
+				D587B04729064FCB00701C5E /* MVVMModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D587B04429064F6B00701C5E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D587B04C2906688C00701C5E /* MVVMView.h */,
+				D587B04D2906688C00701C5E /* MVVMView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D587B04529064F6B00701C5E /* ViewContrller */ = {
+			isa = PBXGroup;
+			children = (
+				D587B04F29066D9300701C5E /* MVVMViewController.h */,
+				D587B05029066D9300701C5E /* MVVMViewController.m */,
+			);
+			path = ViewContrller;
 			sourceTree = "<group>";
 		};
 		D587ED4328FD8AFD00642A33 = {
@@ -497,11 +565,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D587B04B2906670300701C5E /* MVVMViewModel.m in Sources */,
 				D587ED6528FD8AFF00642A33 /* main.m in Sources */,
 				D587AFF6290638EC00701C5E /* BaseViewController.m in Sources */,
 				D587ED5728FD8AFD00642A33 /* ViewController.m in Sources */,
 				D587ED5D28FD8AFD00642A33 /* oc.xcdatamodeld in Sources */,
 				D587ED5128FD8AFD00642A33 /* AppDelegate.m in Sources */,
+				D587B04E2906688C00701C5E /* MVVMView.m in Sources */,
+				D587B04829064FCB00701C5E /* MVVMModel.m in Sources */,
+				D587B05129066D9300701C5E /* MVVMViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,7 +6,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "MVVMViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,7 +22,7 @@
     
     [self.window setBackgroundColor:[UIColor whiteColor]];
     
-    ViewController *vc = [[ViewController alloc] init];
+    MVVMViewController *vc = [[MVVMViewController alloc] init];
 
     self.window.rootViewController = vc;
     
