@@ -13,6 +13,7 @@
 @property(nonatomic,strong)UIImageView *imageView1;
 @property(nonatomic,strong)UIImageView *imageView2;
 @property(nonatomic,strong)UIImageView *imageView3;
+@property(nonatomic,strong)UIButton *button;
 
 @end
 
@@ -43,6 +44,12 @@
     [self addSubview:self.imageView1];
     [self addSubview:self.imageView2];
     [self addSubview:self.imageView3];
+    [self addSubview:self.button];
+}
+
+- (void)changeImages{
+    
+    [self.viewModel changeImages];
 }
 
 - (void)layoutSubviews {
@@ -73,6 +80,14 @@
         make.width.mas_equalTo(300);
         make.height.mas_equalTo(150);
     }];
+    
+    [self.button mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.top.equalTo(weakSelf.imageView3.mas_bottom).offset(50);
+        make.centerX.equalTo(weakSelf);
+        make.width.mas_equalTo(50);
+        make.height.mas_equalTo(30);
+    }];
 }
 
 - (void)setWithViewModel:(GCDViewModel *)viewModel {
@@ -80,7 +95,6 @@
     self.viewModel = viewModel;
     
     [self.viewModel getData];
-    
     
     BJWeakSelf
     _viewModel.block = ^(NSMutableArray * _Nonnull array) {
@@ -121,6 +135,19 @@
     }
     
     return _imageView3;
+}
+
+- (UIButton *)button {
+    
+    if (!_button) {
+        
+        _button = [UIButton new];
+        _button.backgroundColor = [UIColor redColor];
+        [_button setTitle:@"改图" forState:UIControlStateNormal];
+        [_button addTarget:self action:@selector(changeImages) forControlEvents:UIControlEventTouchUpInside];
+    }
+    
+    return _button;
 }
 
 @end

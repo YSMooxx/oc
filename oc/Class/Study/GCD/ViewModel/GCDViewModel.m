@@ -7,6 +7,12 @@
 
 #import "GCDViewModel.h"
 
+@interface GCDViewModel ()
+
+@property(nonatomic,strong)NSArray *array;
+
+@end
+
 @implementation GCDViewModel
 
 - (void)setWithModel:(GCDModel *)model {
@@ -67,6 +73,40 @@
         
     });
 
+}
+
+- (void)changeImages {
+
+    NSMutableIndexSet *picks = [NSMutableIndexSet indexSet];
+    do {
+        [picks addIndex:arc4random() % self.array.count];
+    } while (picks.count != 3);
+    [picks enumerateIndexesUsingBlock:^(NSUInteger idx, BOOL *stop) {
+        
+        if (idx==0) {
+            
+            self.model.url1 = self.array[idx];
+        }else if (idx == 1) {
+            
+            self.model.url2 = self.array[idx];
+        }else if (idx == 2) {
+            
+            self.model.url3 = self.array[idx];
+        }
+        
+    }];
+    
+    [self getData];
+}
+
+- (NSArray *)array {
+    
+    if (!_array) {
+        
+        _array = [NSMutableArray arrayWithObjects:@"http://www.djy-es.com/statics/images/jianjie.jpg",@"http://www.djy-es.com/statics/images/zhunzhe.jpg",@"http://www.djy-es.com/statics/images/slider-bg-2.jpg",@"http://www.djy-es.com/statics/images/ma1.png",@"http://www.djy-es.com/statics/site/images/business/1.jpg",@"https://www.baidu.com/img/pc_675fe66eab33abff35a2669768c43d95.png", nil];
+    }
+    
+    return _array;
 }
 
 @end

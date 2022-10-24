@@ -11,9 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GCDModel : BaseModel
 
-@property(nonatomic,strong)NSString * url1;
-@property(nonatomic,strong)NSString * url2;
-@property(nonatomic,strong)NSString * url3;
+@property(nonatomic,copy)NSString * url1;
+@property(nonatomic,copy)NSString * url2;
+@property(nonatomic,copy)NSString * url3;
 
 @end
 

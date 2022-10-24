@@ -28,6 +28,8 @@ typedef void (^imageBlock)(NSMutableArray *array);
 
 - (void)getData;
 
+- (void)changeImages;
+
 @end
 
 NS_ASSUME_NONNULL_END
