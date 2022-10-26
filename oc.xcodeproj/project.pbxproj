@@ -10,6 +10,8 @@
 		18EC938CE9904A557DAD755A /* Pods_oc_ocUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B71617C8AA6B23712B5F38 /* Pods_oc_ocUITests.framework */; };
 		4B115E9B68EA13D1E856FE8C /* Pods_oc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5C15B7B108CD6961BF8AA28 /* Pods_oc.framework */; };
 		9E662EFCBFF88D7C4164A43F /* Pods_ocTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 905E7897378176D5848903FF /* Pods_ocTests.framework */; };
+		D5377FBC29091CB800E4A620 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = D5377FBB29091CB800E4A620 /* Person.m */; };
+		D5377FBF29091DC800E4A620 /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5377FBE29091DC800E4A620 /* PersonViewController.m */; };
 		D587AFF6290638EC00701C5E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D587AFF5290638EC00701C5E /* BaseViewController.m */; };
 		D587B04829064FCB00701C5E /* MVVMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D587B04729064FCB00701C5E /* MVVMModel.m */; };
 		D587B04B2906670300701C5E /* MVVMViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D587B04A2906670300701C5E /* MVVMViewModel.m */; };
@@ -60,6 +62,10 @@
 		8B076CB65C8BBD1CEB6A872C /* Pods-oc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oc.debug.xcconfig"; path = "Target Support Files/Pods-oc/Pods-oc.debug.xcconfig"; sourceTree = "<group>"; };
 		905E7897378176D5848903FF /* Pods_ocTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ocTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2A3F188F4801FDBE9C73172 /* Pods-oc-ocUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oc-ocUITests.release.xcconfig"; path = "Target Support Files/Pods-oc-ocUITests/Pods-oc-ocUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D5377FBA29091CB800E4A620 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		D5377FBB29091CB800E4A620 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		D5377FBD29091DC800E4A620 /* PersonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonViewController.h; sourceTree = "<group>"; };
+		D5377FBE29091DC800E4A620 /* PersonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonViewController.m; sourceTree = "<group>"; };
 		D587AFF4290638EC00701C5E /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		D587AFF5290638EC00701C5E /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		D587B04629064FCB00701C5E /* MVVMModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMModel.h; sourceTree = "<group>"; };
@@ -153,6 +159,33 @@
 				2B88C99209AFE760C24D1DFB /* Pods-ocTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D5377FB729091C9E00E4A620 /* OBJC */ = {
+			isa = PBXGroup;
+			children = (
+				D5377FB829091C9E00E4A620 /* Controller */,
+				D5377FB929091C9E00E4A620 /* Model */,
+			);
+			path = OBJC;
+			sourceTree = "<group>";
+		};
+		D5377FB829091C9E00E4A620 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D5377FBD29091DC800E4A620 /* PersonViewController.h */,
+				D5377FBE29091DC800E4A620 /* PersonViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D5377FB929091C9E00E4A620 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D5377FBA29091CB800E4A620 /* Person.h */,
+				D5377FBB29091CB800E4A620 /* Person.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		D587AFEF290638BE00701C5E /* Class */ = {
@@ -252,6 +285,7 @@
 			children = (
 				D587B04129064F6B00701C5E /* MVVM */,
 				D587B05229068DDD00701C5E /* GCD */,
+				D5377FB729091C9E00E4A620 /* OBJC */,
 			);
 			path = Study;
 			sourceTree = "<group>";
@@ -662,6 +696,8 @@
 				D587B0672906927500701C5E /* GCDView.m in Sources */,
 				D587ED6528FD8AFF00642A33 /* main.m in Sources */,
 				D587B06A2906929B00701C5E /* BaseModel.m in Sources */,
+				D5377FBC29091CB800E4A620 /* Person.m in Sources */,
+				D5377FBF29091DC800E4A620 /* PersonViewController.m in Sources */,
 				D587B06D290692E900701C5E /* GCDModel.m in Sources */,
 				D587B05E29068E5A00701C5E /* BaseViewModel.m in Sources */,
 				D587AFF6290638EC00701C5E /* BaseViewController.m in Sources */,

@@ -7,6 +7,7 @@
 
 #import "AppDelegate.h"
 #import "GCDViewController.h"
+#import "PersonViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,7 +23,7 @@
     
     [self.window setBackgroundColor:[UIColor whiteColor]];
     
-    GCDViewController *vc = [[GCDViewController alloc] init];
+    PersonViewController *vc = [[PersonViewController alloc] init];
 
     self.window.rootViewController = vc;
     
