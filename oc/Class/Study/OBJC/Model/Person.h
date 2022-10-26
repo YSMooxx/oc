@@ -9,8 +9,6 @@
 
 @interface Person : BaseModel
 
-@property(nonatomic,strong)NSString *name;
-
 -(void)personChangeName;
 
 + (void)personChangeName2;

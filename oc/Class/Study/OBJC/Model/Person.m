@@ -7,6 +7,12 @@
 
 #import "Person.h"
 
+@interface Person ()
+
+@property(nonatomic,strong)NSString *name;
+
+@end
+
 @implementation Person
 
 - (void)personChangeName {
@@ -24,5 +30,6 @@
     _name = name;
     NSLog(@"%@",_name);
 }
+
 
 @end
