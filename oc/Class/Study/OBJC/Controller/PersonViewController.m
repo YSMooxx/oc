@@ -12,6 +12,7 @@
 @property(nonatomic,strong)UILabel *label;
 @property(nonatomic,assign)float xx;
 @property(nonatomic,strong)NSString *name;
+@property(nonatomic,strong)NSArray *array;
 
 @end
 
@@ -34,9 +35,8 @@
 - (void)setup2 {
     
     Person * p = [Person new];
+    [p addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:nil];
     [p setValue:@"老李" forKey:@"name"];
-    
-    NSLog(@"%@",[p valueForKey:@"name"]);
     
     [self.label setValue:@"yx" forKey:@"text"];
     [self.label sizeToFit];
@@ -45,6 +45,16 @@
     NSLog(@"%f",self.xx);
     NSLog(@"%@",[self valueForKey:@"label"]);
     NSLog(@"%@",[p valueForKeyPath:@"_name.length"]);
+    
+    [p removeObserver:self forKeyPath:@"name"];
+    [p setValue:@"老杨" forKey:@"name"];
+
+    
+}
+
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    
+    NSLog(@"keyPath = %@, obj = %@, change = %@, context = %@", keyPath, object, change, context);
 }
 
 - (UILabel *)label {
@@ -57,6 +67,16 @@
     }
     
     return _label;
+}
+
+- (NSArray *)array {
+    
+    if (!_array) {
+        
+        _array = @[@1,@2,@3,@4];
+    }
+    
+    return _array;
 }
 
 @end
