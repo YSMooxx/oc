@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)MVVMModel *model;
 
 -(void)setWithModel:(MVVMModel * _Nonnull)model;
--(void)clickChangeName;
+-(MVVMViewModel*)clickChangeName;
 
 @end
 

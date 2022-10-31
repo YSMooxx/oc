@@ -26,10 +26,11 @@
     
 }
 
-- (void)clickChangeName {
+- (MVVMViewModel*)clickChangeName {
     
     self.model.name = [self randomStringWithLength:5];
     NSLog(@"%@",self.model.name);
+    return self;
 }
 
 -(NSString *)randomStringWithLength:(NSInteger)len {
@@ -39,6 +40,7 @@
     for (NSInteger i = 0; i < len; i++) {
         [randomString appendFormat: @"%C", [letters characterAtIndex: arc4random_uniform([letters length])]];
     }
+    
     return randomString;
 }
 

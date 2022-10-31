@@ -51,8 +51,7 @@
 
 - (void)mvvmClickChangeModel {
     
-    [self.vm clickChangeName];
-    self.label.text = self.vm.model.name;
+    [self setWithViewModel:[self.vm clickChangeName]];
 }
 
 #pragma label

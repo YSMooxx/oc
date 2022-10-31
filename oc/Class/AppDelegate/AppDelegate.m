@@ -8,6 +8,7 @@
 #import "AppDelegate.h"
 #import "GCDViewController.h"
 #import "PersonViewController.h"
+#import "MVVMViewController.h"
 
 @interface AppDelegate ()
 
@@ -23,7 +24,7 @@
     
     [self.window setBackgroundColor:[UIColor whiteColor]];
     
-    PersonViewController *vc = [[PersonViewController alloc] init];
+    MVVMViewController *vc = [[MVVMViewController alloc] init];
 
     self.window.rootViewController = vc;
     
